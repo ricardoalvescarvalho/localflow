@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./basic.css">
+    <link rel="stylesheet" href="./butoned.css">
+    <link rel="stylesheet" href="./colors.css">
+    <link rel="stylesheet" href="./modal.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./dlg.css">
+</head>
+<body>
+    <div id="dlg-content">
+        <div id="dlg-top">
+            <div class="row">
+                <span class="align-vert-center">Texto</span>
+                <input type="text" id="dlg-text">
+            </div>
+            <div class="row">
+                <span>Estilo:</span>
+                <input type="radio" name="peso" id="suave" value="400"><label for="suave" class="suave">Suave</label>
+                <input type="radio" name="peso" id="normal" value="500"><label for="normal" class="normal">Normal</label>
+                <input type="radio" name="peso" id="negrito" value="700"><label for="negrito" class="negrito">Negrito</label>
+                <input type="checkbox" name="italico" id="italico"><label for="italico" class="italico">Itálico</label>
+            </div>
+            
+        </div>
+        <div id="dlg-bottom">
+            <div id="amostra">
+            </div>
+            <div id="dlg-buttons">
+                <label for="btn-fundo" class="dlg-lbl">Fundo</label>
+                <input id="btn-fundo" type="color" class="dlg-color">
+                <label for="btn-fonte" class="dlg-lbl">Fonte</label>
+                <input id="btn-fonte" type="color" class="dlg-color">
+                <label for="btn-borda" class="dlg-lbl">Borda</label>
+                <input id="btn-borda" type="color" class="dlg-color">
+                <label for="inp-altura" class="dlg-lbl">Altura</label>
+                <input type="number" id="inp-altura" class="dlg-number">
+                <label for="inp-largura" class="dlg-lbl">Largura</label>
+                <input type="number" id="inp-largura" class="dlg-number">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

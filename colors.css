@@ -1,0 +1,25 @@
+:root {
+    --body: #eee;
+    --text: #404040;
+    --link: #00a;
+    --visited: purple;
+    --hi-link: #00f;
+    --border: #ddd;
+    --control: #44587C;
+    --hi-control: #4D638C;
+    --disabled-control: #9aa6c6;
+    --control-text:#ddd;
+    --hi-control-text: white;
+    --even: white;
+    --odd: #f7f7f7;
+    --shadow: rgba(0, 0, 0, 0.2);
+    --dark: #404040;
+    --hi-dark: #505050;
+    --panel: #ddd;
+    --over: rgb(210, 208, 228);
+    --active: rgb(238, 199, 70);
+    --transparent: rgba(0, 0, 0, 0);
+    --editing: rgb(236, 244, 242);
+    --head: #c5cfdf;
+    --label-text: #999;
+}

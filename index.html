@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalFlow</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./basic.css">
+    <link rel="stylesheet" href="./butoned.css">
+    <link rel="stylesheet" href="./colors.css">
+    <link rel="stylesheet" href="./modal.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./dlg.css">
+    <script src="./modal.js"></script>
+    <script src="./index.js"></script>
+    <script src="./geometrics.js"></script>
+    <script src="./colors.js"></script>
+    <script src="./files.js"></script>
+    <script src="./FileSaver.min.js"></script>
+    <script src="./file_dlg.js"></script>
+</head>
+<body onload="inicia();">
+    
+    <div class="sidenav">
+        <a href="#" onclick="close_model();"><span class="fa fa-file-o" style="font-size:18px"></span><br>Novo</a>
+        <a href="#" onclick="open_model();"><span class="fa fa-folder-open-o" style="font-size:18px"></span><br>Abrir</a>
+        <a href="#" onclick="save_model();"><span class="fa fa-save" style="font-size:18px"></span><br>Salvar</a>
+        <a href="#" onclick="printCorpo();"><span class="fa fa-print" style="font-size:18px"></span><br>Imprimir</a>
+        
+        <div class="separator">|</div>
+
+        <a id="a-circulo" href="#" onclick="addCirculo();"><span class="fa fa-circle-thin" style="font-size:18px"></span><br>Início/Fim</a>
+        <a id="a-quadrado" href="#" onclick="addQuadrado();"><span class="fa fa-square-o" style="font-size:18px"></span><br>Ação</a>
+        <a id="a-losango" href="#" onclick="addLosango();"><div class="diamond"><span class="fa fa-square-o" style="font-size:18px"></span></div>Questão</a>
+        <a id="a-seta" href="#" onclick="addSeta();"><span class="fa fa-long-arrow-right" style="font-size:18px"></span><br>Fluxo</a>
+        
+        <div class="separator">|</div>
+
+        <a id="a-copy" href="#" onclick="copyQuadro();"><span class="fa fa-copy" style="font-size:18px"></span><br>Copiar</a>
+        <a id="a-paste" href="#" onclick="pasteQuadro();"><span class="fa fa-paste" style="font-size:18px"></span><br>Colar</a>
+        <a id="a-del" href="#" onclick="delQuadro();"><span class="fa fa-remove" style="font-size:18px"></span><br>Excluir</a>
+
+        <div class="separator">|</div>
+
+        <a href="#" onclick="show_about();"><span class="fa fa-question" style="font-size:18px"></span><br>Sobre</a>
+    </div>
+
+    <div id="corpo">
+
+    </div>
+
+    
+    <div id="status">status</div>
+    
+
+</body>
+</html>

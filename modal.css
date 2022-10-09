@@ -1,0 +1,111 @@
+/* The Modal (background) */
+.modal {
+    display: none;   /* */
+    position: fixed; 
+    z-index: 1000; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#divModal2 {
+    z-index: 1100;
+}
+  
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: var(--body);
+    margin: auto;
+    padding: 0;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    border-radius: 4px;
+    overflow: hidden;
+}
+  
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+  
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+  
+/* The Close Button */
+.close, .close2 {
+    color: var(--control-text);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: color 250ms;
+}
+  
+.close:hover, .close:focus, .close2:hover, .close2:focus {
+    color: var(--hi-control-text);
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+.modal-header {
+    padding: 2px 16px;
+    background-color: var(--control);
+    color: var(--control-text);
+}
+  
+.modal-body, .modal-body2 {
+      padding: 2px 16px;
+      background-color: var(--body);
+      color: var(--text);
+}
+  
+
+.modal-footer, .modal-footer2 {
+    padding: 2px 16px;
+    background-color: var(--panel);
+    display: flex;
+}
+
+.modal-footer div, .modal-footer2 div {
+    flex-grow: 0;
+}
+
+.modal-footer div:nth-of-type(1), .modal-footer2 div:nth-of-type(1) {
+    flex-basis: 10000px;
+}
+
+.modal-footer div:nth-of-type(2), .modal-footer2 div:nth-of-type(2) {
+    flex-basis: 0px;
+}
+
+
+.button-place, .button-place2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.botao {
+    margin: 12px;
+}
+
+.botao:disabled {
+    background-color: var(--disabled-control);
+    cursor: default;
+}
+
+.botao:disabled:hover {
+    color: var(--control-text);
+}
+
